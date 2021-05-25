@@ -63,7 +63,7 @@ fn append_variable(string: &mut String, is_pattern: bool) {
             }
         } else {
             string.push('v');
-			let underlines: u8 = rng.gen_range(0..4);
+			let underlines: u8 = rng.gen_range(1..4);
             string.push((underlines + 48) as char);
             string.push(rng.gen_range('a'..including('z')));
 			for _ in 0..underlines {
